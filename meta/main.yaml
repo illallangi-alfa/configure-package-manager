@@ -1,8 +1,17 @@
 ---
 dependencies:
-  - src: "https://git@github.com/illallangi-alfa/install-package-manager.git"
+  - src: "https://git@github.com/illallangi-alfa/configure-apt-transport-https.git"
     scm: git
     version: master
-  - src: "https://git@github.com/illallangi-alfa/remove-package-manager.git"
+  - src: "https://git@github.com/illallangi-alfa/configure-ca-certificates.git"
+    scm: git
+    version: master
+  - src: "https://git@github.com/illallangi-alfa/configure-curl.git"
+    scm: git
+    version: master
+  - src: "https://git@github.com/illallangi-alfa/configure-gnupg2.git"
+    scm: git
+    version: master
+  - src: "https://git@github.com/illallangi-alfa/configure-software-properties-common.git"
     scm: git
     version: master
