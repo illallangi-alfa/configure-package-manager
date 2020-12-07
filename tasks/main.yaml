@@ -1,0 +1,8 @@
+---
+- name: "Update templates"
+  template:
+    src:  "{{ item.src | default((item.dest | basename ()) + '.j2')}}"
+    dest: "{{ item.dest }}"
+  with_items: "{{ configure_package_manager.templates[(ansible_os_family | lower) + '_' + (ansible_architecture | lower)] | default([]) }}"
+  tags:
+    - "package-manager"

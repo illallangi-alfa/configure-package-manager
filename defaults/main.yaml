@@ -1,0 +1,8 @@
+---
+configure_package_manager:
+  templates:
+    raspbian: &raspbian
+    debian: &debian
+    - dest:  "/etc/apt/sources.list"
+    debian_armv7l: *raspbian
+    debian_x86_64: *debian
